@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Diamantes y Robux</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #6ec5ff, #d0f0ff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-ec68-61f7-83b1-b37e8b926c78/raw?se=2025-05-01T04%3A51%3A54Z&sp=r&sv=2024-08-04&sr=b&scid=e2b4b2a5-e308-5159-af31-22fa35db5307&skoid=d958ec58-d47c-4d2f-a9f2-7f3e03fdcf72&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-01T03%3A47%3A16Z&ske=2025-05-02T03%3A47%3A16Z&sks=b&skv=2024-08-04&sig=24cXsnrlfjsE38fH/nAnWiH06jdyh7yAARDK0wZDTEI%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .titulo-principal {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .login-box {
+      background-color: #0f1e3e;
+      color: white;
+      border-radius: 20px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .login-box h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #FFD700;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #00c853;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #00a143;
+    }
+
+    .currency-display {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .currency-display img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #00ff88;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="titulo-principal">Generador de Diamantes y Robux</div>
+
+  <div class="login-box">
+    <h1>Diamantes y Robux</h1>
+    <input type="text" placeholder="ID o nombre" id="usuario">
+    <input type="number" placeholder="Cuántos diamantes o Robux quieres" id="cantidad">
+    <button onclick="enviar()">INGRESAR</button>
+
+    <div class="currency-display">
+      <div><img src="https://www.latingm.com/wp-content/uploads/2021/02/Diamantes-Free-Fire-Brasil.jpg" alt="Diamantes"> 1,000,000.00</div>
+      <div><img src="https://images-cdn.ubuy.co.in/66ce4363c927b327580622de-1500-robux-read-disc-roblox.jpg" alt="Robux"> 1,000,000.00</div>
+    </div>
+
+    <div id="mensaje">🎁 ¡Regalo enviado con éxito!</div>
+  </div>
+
+  <script>
+    function enviar() {
+      const usuario = document.getElementById('usuario').value;
+      const cantidad = document.getElementById('cantidad').value;
+
+      if (usuario && cantidad) {
+        document.getElementById('mensaje').style.display = 'block';
+      } else {
+        alert("Por favor, completa todos los campos.");
+      }
+    }
+  </script>
+</body>
+</html>
+
